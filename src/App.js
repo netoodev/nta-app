@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import SidebarBtn from './components/SidebarBtn/sidebarBtn';
+import qrcodeIc from './img/qrcode-ic.svg';
+import keyIc from './img/key-ic.svg';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='sidebar'>
+      <div class="container">
+        <h1>NTA</h1>
+        <SidebarBtn src={qrcodeIc} title="Autorizar Entrega" description="Leitor de QrCode"/>
+        <SidebarBtn src={keyIc} title="Retirada por Código" description="Retirada de Chaves"/>
+      </div>
     </div>
   );
 }
