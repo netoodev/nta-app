@@ -37,6 +37,23 @@ function App() {
             <InfoCard img={reservedKeyIc} style={infoCardPurple} title="Chaves reservadas" number="66"/>
             <InfoCard img={openKeyIc} style={infoCardGreen} title="Chaves em aberto" number="102"/>
           </div>
+          <div className="keys-content">
+            <div className='top-divider'></div>
+            <div className='keys-content-wrapper'>
+              <div className='keys-content-section'>
+                  <h4 className='keys-content-section-title'>Chaves Em Uso</h4>
+
+              </div>
+              <div className='keys-content-section'>
+                  <h4 className='keys-content-section-title'>Chaves Reservadas</h4>
+
+              </div>
+              <div className='keys-content-section'>
+                  <h4 className='keys-content-section-title'>Chaves Em Aberto</h4>
+
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

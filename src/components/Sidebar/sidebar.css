@@ -10,7 +10,8 @@
 .sidebar {
   width: 18%;
   max-width: 982px;
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
   background-color: var(--gray-bg);
   border-right: 2px solid var(--dark-gray);
 }
