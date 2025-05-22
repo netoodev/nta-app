@@ -6,6 +6,7 @@ import profilePic from './img/profile-pic.jpg';
 import keyUseIc from './img/key-use-ic.svg';
 import reservedKeyIc from './img/reserved-key-ic.svg';
 import openKeyIc from './img/open-key-ic.svg';
+import KeyCard from './components/KeyCard/keyCard';
 
 function App() {
   const infoCardBlue = {
@@ -33,16 +34,16 @@ function App() {
         <Header name='Patrick Ramos' function='Monitor de chaves' img={profilePic}/>
         <div className='content'>
           <div className='infocard-wrapper'>
-            <InfoCard img={keyUseIc} style={infoCardBlue} title="Chaves Em Uso" number="53"/>
-            <InfoCard img={reservedKeyIc} style={infoCardPurple} title="Chaves reservadas" number="66"/>
-            <InfoCard img={openKeyIc} style={infoCardGreen} title="Chaves em aberto" number="102"/>
+            <InfoCard img={keyUseIc} style={infoCardBlue} title="Chaves Em Uso" number="01"/>
+            <InfoCard img={reservedKeyIc} style={infoCardPurple} title="Chaves Reservadas" number="02"/>
+            <InfoCard img={openKeyIc} style={infoCardGreen} title="Chaves em Aberto" number="102"/>
           </div>
           <div className="keys-content">
             <div className='top-divider'></div>
             <div className='keys-content-wrapper'>
               <div className='keys-content-section'>
                   <h4 className='keys-content-section-title'>Chaves Em Uso</h4>
-
+                  <KeyCard/>
               </div>
               <div className='keys-content-section'>
                   <h4 className='keys-content-section-title'>Chaves Reservadas</h4>
