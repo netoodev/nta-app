@@ -7,6 +7,7 @@ import keyUseIc from './img/key-use-ic.svg';
 import reservedKeyIc from './img/reserved-key-ic.svg';
 import openKeyIc from './img/open-key-ic.svg';
 import KeyCard from './components/KeyCard/keyCard';
+import docenteProfilePic from './img/docente-profile-pic.png';
 
 function App() {
   const infoCardBlue = {
@@ -43,7 +44,7 @@ function App() {
             <div className='keys-content-wrapper'>
               <div className='keys-content-section'>
                   <h4 className='keys-content-section-title'>Chaves Em Uso</h4>
-                  <KeyCard/>
+                  <KeyCard img={docenteProfilePic} topSpan="Docente" topP="Patrícia R. Ramos Lima" rightSpan="Sala" rightP="1402" leftSpan="Agendamento" leftP="18:00 - 20:00"/>
               </div>
               <div className='keys-content-section'>
                   <h4 className='keys-content-section-title'>Chaves Reservadas</h4>

@@ -9,8 +9,17 @@
 
     display: flex;
     align-items: center;
+    gap: 15px;
 
     padding: 15px;
+
+    cursor: pointer;
+    transition: .2s ease-in;
+}
+
+.keycard:hover {
+  scale: 1.05;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .key-user{
@@ -45,4 +54,26 @@
     border: 2px solid var(--dark-blue);
     border-radius: 18px;
     box-shadow: 0px 0px 2px 1px #00000005, 0px 32px 64px #0000000a;
+}
+
+.key-user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.key-user-info span {
+    font-size: 10.7px;
+    color: #474747;
+    font-weight: 500;
+}
+
+.key-user-info p {
+    font-size: 15px;
+    color: var(--light-black);
+    font-weight: 700;
+}
+
+.key-user-info-bottom {
+    display: flex;
+    gap: 20px;
 }
