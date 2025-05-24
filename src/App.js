@@ -6,8 +6,10 @@ import profilePic from './img/profile-pic.jpg';
 import keyUseIc from './img/key-use-ic.svg';
 import reservedKeyIc from './img/reserved-key-ic.svg';
 import openKeyIc from './img/open-key-ic.svg';
-import KeyCard from './components/KeyCard/keyCard';
+import KeyCardUser from './components/KeyCard/keyCardUser';
 import docenteProfilePic from './img/docente-profile-pic.png';
+import docenteProfilePic2 from './img/docente-profile-pic-2.jpg';
+import docenteProfilePic3 from './img/docente-profile-pic-3.jpg';
 
 function App() {
   const infoCardBlue = {
@@ -43,16 +45,23 @@ function App() {
             <div className='top-divider'></div>
             <div className='keys-content-wrapper'>
               <div className='keys-content-section'>
-                  <h4 className='keys-content-section-title'>Chaves Em Uso</h4>
-                  <KeyCard img={docenteProfilePic} topSpan="Docente" topP="Patrícia R. Ramos Lima" rightSpan="Sala" rightP="1402" leftSpan="Agendamento" leftP="18:00 - 20:00"/>
+                <h4 className='keys-content-section-title'>Chaves Em Uso</h4>
+                <div className='keys-content-section-grid'>
+                  <KeyCardUser img={docenteProfilePic} name="Patrícia R. Ramos Lima" room="1402" startHour="18:00" endHour="20:00"/>
+                </div>
               </div>
               <div className='keys-content-section'>
-                  <h4 className='keys-content-section-title'>Chaves Reservadas</h4>
-
+                <h4 className='keys-content-section-title'>Chaves Reservadas</h4>
+                <div className='keys-content-section-grid'>
+                  <KeyCardUser img={docenteProfilePic2} name="Luana Cristina Silva S." room="1406" startHour="20:30" endHour="21:00"/>
+                  <KeyCardUser img={docenteProfilePic3} name="Davi de Oliveira Paulo" room="1407" startHour="20:00" endHour="21:00"/>
+                </div>
               </div>
               <div className='keys-content-section'>
-                  <h4 className='keys-content-section-title'>Chaves Em Aberto</h4>
+                <h4 className='keys-content-section-title'>Chaves Em Aberto</h4>
+                <div className='keys-content-section-grid'>
 
+                </div>
               </div>
             </div>
           </div>

@@ -60,6 +60,12 @@
   gap: 22px;
 }
 
+.keys-content-section-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 14px;
+}
+
 .keys-content-section-title {
   font-size: 15px;
   font-weight: bold;

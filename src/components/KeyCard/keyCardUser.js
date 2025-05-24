@@ -2,29 +2,29 @@ import React from 'react';
 import './keyCard.css';
 
 
-const KeyCard = (props) => (
+const KeyCardUser = (props) => (
     <div className='keycard'>
         <div className='key-user'>
-            <div className='user-class'><p>1402</p></div>
-            <img src={props.img} alt=''></img>
+            <div className='user-class'><p>{props.room}</p></div>
+            <div className='key-user-img' style={{backgroundImage: `url(${props.img})`}}></div>
         </div>
         <div className='key-user-info'>
              <div className='key-user-info-top'>
-                <span>{props.topSpan}</span>
-                <p>{props.topP}</p>
+                <span>Docente</span>
+                <p>{props.name}</p>
              </div>
              <div className='key-user-info-bottom'>
                 <div className='key-user-info-right'>
-                    <span>{props.rightSpan}</span>
-                    <p>{props.rightP}</p>
+                    <span>Sala</span>
+                    <p>{props.room}</p>
                 </div>
                 <div className='key-user-info-left'>
-                    <span>{props.leftSpan}</span>
-                    <p>{props.leftP}</p>
+                    <span>Agendamento</span>
+                    <p>{props.startHour} - {props.endHour}</p>
                 </div>
              </div>
         </div>
     </div>
 );
 
-export default KeyCard;
+export default KeyCardUser;

@@ -50,10 +50,16 @@
     color: var(--white);
 }
 
-.key-user > img {
+.key-user-img {
     border: 2px solid var(--dark-blue);
     border-radius: 18px;
     box-shadow: 0px 0px 2px 1px #00000005, 0px 32px 64px #0000000a;
+    width: 66px;
+    height: 66px;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
 .key-user-info {
