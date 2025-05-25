@@ -7,6 +7,7 @@ import keyUseIc from './img/key-use-ic.svg';
 import reservedKeyIc from './img/reserved-key-ic.svg';
 import openKeyIc from './img/open-key-ic.svg';
 import KeyCardUser from './components/KeyCard/keyCardUser';
+import KeyCardRoom from './components/KeyCard/keyCardRoom';
 import docenteProfilePic from './img/docente-profile-pic.png';
 import docenteProfilePic2 from './img/docente-profile-pic-2.jpg';
 import docenteProfilePic3 from './img/docente-profile-pic-3.jpg';
@@ -39,7 +40,7 @@ function App() {
           <div className='infocard-wrapper'>
             <InfoCard img={keyUseIc} style={infoCardBlue} title="Chaves Em Uso" number="01"/>
             <InfoCard img={reservedKeyIc} style={infoCardPurple} title="Chaves Reservadas" number="02"/>
-            <InfoCard img={openKeyIc} style={infoCardGreen} title="Chaves em Aberto" number="102"/>
+            <InfoCard img={openKeyIc} style={infoCardGreen} title="Chaves em Aberto" number="06"/>
           </div>
           <div className="keys-content">
             <div className='top-divider'></div>
@@ -60,7 +61,12 @@ function App() {
               <div className='keys-content-section'>
                 <h4 className='keys-content-section-title'>Chaves Em Aberto</h4>
                 <div className='keys-content-section-grid'>
-
+                  <KeyCardRoom img="" type="Sala de Aula" number="0911" capacity="25" />
+                  <KeyCardRoom img="" type="Laboratório Desktop" number="1055" capacity="25" />
+                  <KeyCardRoom img="" type="Sala de Aula" number="1130" capacity="35" />
+                  <KeyCardRoom img="" type="Auditório" number="1054" capacity="130" />
+                  <KeyCardRoom img="" type="Laboratório Notebook" number="1056" capacity="25" />
+                  <KeyCardRoom img="" type="Laboratório Notebook" number="1260" capacity="25" />
                 </div>
               </div>
             </div>

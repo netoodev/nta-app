@@ -62,8 +62,10 @@
 
 .keys-content-section-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 14px;
+  justify-content: start;
+  max-width: 1000px; 
 }
 
 .keys-content-section-title {
