@@ -11,7 +11,6 @@ import KeyCardRoom from './components/KeyCard/keyCardRoom';
 import docenteProfilePic from './img/docente-profile-pic.png';
 import docenteProfilePic2 from './img/docente-profile-pic-2.jpg';
 import docenteProfilePic3 from './img/docente-profile-pic-3.jpg';
-import ActionCard from './components/ActionCard/actionCard';
 
 function App() {
   const infoCardBlue = {
@@ -50,7 +49,6 @@ function App() {
                 <h4 className='keys-content-section-title'>Chaves Em Uso</h4>
                 <div className='keys-content-section-grid'>
                   <KeyCardUser img={docenteProfilePic} name="Patrícia R. Ramos Lima" room="1402" startHour="18:00" endHour="20:00"/>
-                  <ActionCard/>
                 </div>
               </div>
               <div className='keys-content-section'>

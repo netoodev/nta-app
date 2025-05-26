@@ -1,3 +1,9 @@
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
 .keycard {
     width: 310px;
     max-height: 104px; 
