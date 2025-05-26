@@ -1,6 +1,6 @@
 .keycard {
     width: 310px;
-    min-height: 104px; 
+    max-height: 104px; 
 
     border: 1px solid var(--dark-gray);
     border-radius: 15px;

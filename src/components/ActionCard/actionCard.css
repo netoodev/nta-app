@@ -1,3 +1,9 @@
+.action-card-main {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
 .action-card {
     width: 278px;
     height: 75px;
@@ -50,4 +56,37 @@
     color: var(--white);
 
     cursor: pointer;
+}
+
+.room-info-card {
+    width: 232px;
+    height: 114px;
+
+    padding-inline: 18px;
+    padding-block: 16px;
+
+    background-color: var(--white);
+    border: 1px solid var(--dark-gray);
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.room-info-card > div:nth-of-type(2) {
+    display: flex;
+    gap: 14px;
+}
+
+.room-info-card > div span {
+    font-size: 10.7px;
+    color: #474747;
+    font-weight: 500;
+}
+
+.room-info-card > div p {
+    font-size: 15px;
+    color: var(--light-black);
+    font-weight: 700;
 }
